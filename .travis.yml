@@ -40,8 +40,12 @@ matrix:
       env: TOXENV=py38
       stage: test
 
+    - python: 3.9
+      env: TOXENV=py39
+      stage: test
+      
     - python: nightly
-      env: TOXENV=py38
+      env: TOXENV=py39
       stage: test
 
     - python: pypy
