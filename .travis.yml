@@ -45,7 +45,7 @@ matrix:
       stage: test
       
     - python: nightly
-      env: TOXENV=py39
+      env: TOXENV=py310
       stage: test
 
     - python: pypy
