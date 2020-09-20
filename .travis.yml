@@ -40,7 +40,7 @@ matrix:
       env: TOXENV=py38
       stage: test
 
-    - python: 3.9
+    - python: 3.9-dev
       env: TOXENV=py39
       stage: test
       
@@ -57,6 +57,7 @@ matrix:
       stage: test
 
   allow_failures:
+    - python: 3.9-dev
     - python: nightly
 
 before_install:
